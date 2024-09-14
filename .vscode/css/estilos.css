@@ -1,0 +1,57 @@
+/* Estilo para el contenedor de la forma */
+.form-container {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad para la transparencia */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fondo transparente para el contenedor principal */
+.transparent-background {
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container {
+    background-color: transparent; 
+}
+
+/* Estilo para los botones en el formulario */
+.btn-block {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Estilo para el textarea */
+textarea.form-control {
+    resize: vertical;
+}
+
+/* Estilo para la vista previa de JSON */
+#jsonResult {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Añadir márgenes a las tarjetas */
+.card {
+    margin-top: 20px;
+}
+
+/* Mejora de la presentación de los resultados */
+#resultContent {
+    margin-top: 20px;
+}
+
+/* Estilo para las etiquetas y campos del formulario */
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    border-radius: 5px;
+}
