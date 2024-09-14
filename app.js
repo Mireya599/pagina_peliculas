@@ -25,16 +25,14 @@ function actualizar() {
     //fetch('https://movie.azurewebsites.net/api/cartelera', options)
     fetch('https://movie.azurewebsites.net/api/cartelera?imdbID=' + movie.imdbID, options)
         .then(response => {
-            // Aquí la promesa se cumplió, obtuvimos una respuesta
-            return response.json(); // Convertimos la respuesta a JSON
+         
+            return response.json(); 
         })
         .then(data => {
-            // Aquí tenemos los datos que pedimos
             console.log(data);
             alert("Pelicula Actualizada: " + data.Title);
         })
         .catch(error => {
-            // Aquí la promesa falló, manejamos el error
             console.error('Error:', error);
         });
 }
@@ -44,11 +42,9 @@ function buscar() {
 
     fetch('https://movie.azurewebsites.net/api/cartelera?imdbID=' + imdbID)
         .then(response => {
-            // Aquí la promesa se cumplió, obtuvimos una respuesta
-            return response.json(); // Convertimos la respuesta a JSON
+            return response.json(); 
         })
         .then(data => {
-            // Aquí tenemos los datos que pedimos
             console.log(data);
             document.getElementById('Title').value = data.Title;
             document.getElementById('Year').value = data.Year;
@@ -59,7 +55,6 @@ function buscar() {
             document.getElementById('Estado').value = data.Estado;
         })
         .catch(error => {
-            // Aquí la promesa falló, manejamos el error
             console.error('Error:', error);
         });
 }
@@ -88,16 +83,13 @@ function guardar() {
 
     fetch('https://movie.azurewebsites.net/api/cartelera', options)
         .then(response => {
-            // Aquí la promesa se cumplió, obtuvimos una respuesta
-            return response.json(); // Convertimos la respuesta a JSON
+            return response.json();
         })
         .then(data => {
-            // Aquí tenemos los datos que pedimos
             console.log(data);
             alert("Pelicula Guardada: " + data.Title);
         })
         .catch(error => {
-            // Aquí la promesa falló, manejamos el error
             console.error('Error:', error);
         });
 }
@@ -107,16 +99,13 @@ function eliminar() {
 
     fetch('https://movie.azurewebsites.net/api/cartelera?imdbID=' + imdbID, { method: 'DELETE' })
         .then(response => {
-            // Aquí la promesa se cumplió, obtuvimos una respuesta
-            return response.json(); // Convertimos la respuesta a JSON
+            return response.json();
         })
         .then(data => {
-            // Aquí tenemos los datos que pedimos
             console.log(data);
             alert("Pelicula Eliminada: " + data.Title);
         })
         .catch(error => {
-            // Aquí la promesa falló, manejamos el error
             console.error('Error:', error);
         });
 }
