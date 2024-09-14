@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Contenedor del formulario */
+
 .form-container {
     max-width: 900px;
     margin: 40px auto;
@@ -17,13 +17,13 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para los formularios */
+
 form {
     margin-bottom: 30px;
 }
 
 h2 {
-    color: #2c3e50;
+    color: #000000;
     font-size: 24px;
 }
 
@@ -31,7 +31,7 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: normal;
-    color: #7f8c8d;
+    color: #000000;
 }
 
 input[type="text"],
@@ -86,7 +86,7 @@ button {
     background-color: #c0392b;
 }
 
-/* Contenedor de resultados */
+/* resultados */
 #resultContent {
     margin-top: 30px;
     padding: 20px;
